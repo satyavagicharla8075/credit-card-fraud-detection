@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Fraud Detection</title>
+    <link rel="stylesheet" href="static/predictstyles.css">
+    <div class="bg"></div>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Credit Card Fraud Detection</h1>
+        <form action="/predict" method="post" class="form">
+            {% for feature in range(30) %}
+                <div class="form-group">
+                    <label for="feature{{ feature }}">Trans {{ feature }}</label>
+                    <input type="text" id="feature{{ feature }}" name="feature{{ feature }}" class="form-control" required>
+                </div>
+            {% endfor %}
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>

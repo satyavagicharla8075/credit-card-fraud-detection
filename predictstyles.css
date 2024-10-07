@@ -1,0 +1,79 @@
+.bg{
+    background-image: url('../static/images/pred.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+    opacity: 0.7;
+  }
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../static/images/pred.jpg');
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #090c0a5a;
+    backdrop-filter: blur(20px);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px rgba(19, 2, 2, 0.1);
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.form {
+    margin-top: 20px;
+}
+
+.form-group {
+    color:#41e93bc9 ;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 19px;
+}
+
+label {
+    color: #57e863;
+    font-weight: bold;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+}
+
+.input-group input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bde853;
+    border-radius: 5px;
+}
+
+.btn {
+
+    background-color: #e64d26e1;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #57e863;
+}
